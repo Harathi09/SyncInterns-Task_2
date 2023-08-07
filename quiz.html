@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<link rel="stylesheet" href="quix.css">
+
+</head>
+<body>
+	<div class="home-box custome-box ">
+		<h1 align="center">Have a Great Platform to Check Your Knowledge</h1>
+		<br/>
+		<h2><b>Instructions:</b></h2>
+		<p>Total questions: <span class="total-question">10</span></p>
+    <p>You Can Write The Test As Many Times You Want.</p>
+		
+		<br/>
+		<button type="button" class="btn" onclick="startQuiz()">Start Now</button>
+	</div>
+
+	<div class="quiz-box custome-box hide">
+		<div class="question-no">
+			
+		</div>
+		<div class="question-text">
+			
+		</div>
+		<div class="opt-container">
+			
+		</div>
+		<div class="next-question-btn">
+			<center>			<button type="button" class="btn" onclick="next()">Next</button></center>
+
+		</div>
+		<div class="ans-indicator">
+			
+			
+		</div>
+		
+	</div>
+
+	<div class="result-box custome-box hide">
+		<h1>Quiz Result</h1>
+		<table>
+			<tr>
+				<td>Total Question</td>
+				<td><span class="tot-question"></span></td>
+			</tr>
+			<tr>
+				<td>Attempt</td>
+				<td><span class="tot-attempt"></span></td>
+			</tr>
+			<tr>
+				<td>Correct</td>
+				<td><span class="tot-correct"></span></td>
+			</tr>
+			<tr>
+				<td>Wrong</td>
+				<td><span class="tot-wrong"></span></td>
+			</tr>
+			<tr>
+				<td>Percentage</td>
+				<td><span class="tot-percentage"></span></td>
+			</tr>
+			<tr>
+				<td>Your Total Score</td>
+				<td><span class="tot-score"></span></td>
+			</tr>
+
+		</table>
+		<button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+		<button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+	</div>
+
+	<script src="quiz.js"></script>
+</body>
+</html>
